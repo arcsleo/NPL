@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import ListPlayers from "./components/ListPlayers";
 import EditPlayers from "./components/EditPlayers";
-import reportWebVitals from "./reportWebVitals";
+// import reportWebVitals from "./reportWebVitals";
 import AddPlayers from "./components/AddPlayers";
 import ShowPlayers from "./components/ShowPlayers";
 import "./App.css";

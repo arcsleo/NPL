@@ -4,7 +4,7 @@ import { db } from "../lib/init-firebase";
 
 export default function AddPlayers() {
   const [name, setname] = React.useState("");
-  const [image, setimage] = React.useState("");
+  // const [image, setimage] = React.useState("");
   const [grade, setgrade] = React.useState("");
   const [base64, setbase64] = React.useState("");
   const [position, setposition] = React.useState("");
@@ -15,10 +15,10 @@ export default function AddPlayers() {
       setbase64(reader.result);
     };
   };
-  const convert = () => {
-    let base64ToString = Buffer.from(base64, "base64").toString();
-    setimage(base64ToString);
-  };
+  // const convert = () => {
+  //   let base64ToString = Buffer.from(base64, "base64").toString();
+  //   setimage(base64ToString);
+  // };
   const submitClick = (e) => {
     e.preventDefault();
     const playersRef = collection(db, "Players");
@@ -82,7 +82,7 @@ export default function AddPlayers() {
         </div>
       </div>
       <div className="addplayerimagewrapper">
-        <img src={base64} className="addplayerimage" />
+        <img alt={""} src={base64} className="addplayerimage" />
       </div>
     </div>
   );
