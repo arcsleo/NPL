@@ -20,9 +20,14 @@ export default function ListPlayers() {
   };
 
   React.useEffect(() => {
-    setInterval(() => {
+    // getPlayers();
+    // setInterval(() => {
+    //   getPlayers();
+    // }, 50000);
+    getPlayers();
+    setInterval(function () {
       getPlayers();
-    }, 50000);
+    }, 10000);
   }, []);
 
   return (

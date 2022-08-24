@@ -61,10 +61,14 @@ export default function ShowPlayers() {
   };
 
   React.useEffect(() => {
+    // getPlayers();
+    // setInterval(() => {
+    //   getPlayers();
+    // }, 50000);
     getPlayers();
-    setInterval(() => {
+    setInterval(function () {
       getPlayers();
-    }, 50000);
+    }, 10000);
   }, []);
 
   return (
