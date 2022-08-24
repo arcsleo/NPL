@@ -1,13 +1,128 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.selectionboxHead {
+  display: flex;
+}
+.AddPlayerWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-top: 25px;
+}
+.addplayerbox {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.selectionbox {
+  padding: 8px 15px;
+  margin: 10px;
+  border: 1px solid grey;
+  cursor: pointer;
+  color: #fff;
+}
+
+.selectionbox:hover {
+  background-color: grey;
+}
+
+.mainWrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
+}
+.playertext {
+  width: 30%;
+  color: #fff;
+}
+.submitbuttonadd {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.addplayerfield {
+  background-color: #fff;
+  color: #000;
+  height: 20px;
+}
+.addplayerimagewrapper {
+  width: 50%;
+}
+.addplayercontent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.addplayerimage {
+  width: 30%;
+}
+.playerdetailsmainwrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardBox {
+  width: 250px;
+  padding: 25px 10px;
+  height: 250px;
+  background-color: #fff;
+  margin: 10px;
+  box-shadow: 5px 4px 2px #888888;
+  border-radius: 2%;
+}
+.cardimage {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.playercardmainbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carduserName {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: monospace;
+}
+.cardusersold {
+  font-size: 15px;
+  font-family: monospace;
+}
+.carduserNameAmount {
+  font-size: 15px;
+  font-family: monospace;
+}
+.playerdetailstitle {
+  width: 100%;
+  font-size: 25px;
+  color: #fff;
+  font-family: monospace;
+}
+.playersearchbox {
+  padding: 15px;
+}
+.searchplayertext {
+  height: 25px;
+}
+.searchbutton {
+  height: 31px;
+  margin-left: 5px;
+}
+.amountvalue {
+  color: red;
 }
