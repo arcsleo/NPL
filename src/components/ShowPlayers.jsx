@@ -1,9 +1,6 @@
 import React from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../lib/init-firebase";
-const allrounder = require("../image/allroundbackground.jpg");
-const batsman = require("../image/batsman.jpg");
-const bowler = require("../image/bowler.jpg");
 
 export default function ShowPlayers() {
   const [ListPlayerDetails, setListPlayerDetails] = React.useState([]);
@@ -90,7 +87,7 @@ export default function ShowPlayers() {
               <div className="cardBox">
                 {/* <img src={allrounder} /> */}
                 <div className="cardImageWrapper">
-                  <img src={value.data.Image} className="cardimage" />
+                  <img src={value.data.Image} alt={""} className="cardimage" />
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">
@@ -137,9 +134,8 @@ export default function ShowPlayers() {
             value.data.Name.includes(search) &&
             value.data.Teamname === "" && (
               <div className="cardBox">
-                {/* <img src={allrounder} /> */}
                 <div className="cardImageWrapper">
-                  <img src={value.data.Image} className="cardimage" />
+                  <img src={value.data.Image} alt={""} className="cardimage" />
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">

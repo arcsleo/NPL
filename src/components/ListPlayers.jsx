@@ -1,9 +1,6 @@
 import React from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../lib/init-firebase";
-const allrounder = require("../image/allroundbackground.jpg");
-const batsman = require("../image/batsman.jpg");
-const bowler = require("../image/bowler.jpg");
 
 export default function ListPlayers() {
   const [ListPlayerDetails, setListPlayerDetails] = React.useState([]);
@@ -37,9 +34,9 @@ export default function ListPlayers() {
           return (
             value.data.Grade === "Captain" && (
               <div className="cardBox">
-                {/* <img src={allrounder} /> */}
+                {/* <img alt={""} src={allrounder} /> */}
                 <div className="cardImageWrapper">
-                  <img src={value.data.Image} className="cardimage" />
+                  <img alt={""} src={value.data.Image} className="cardimage" />
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">
@@ -57,9 +54,9 @@ export default function ListPlayers() {
             value.data.Grade === "Grade - A+" &&
             value.data.Teamname !== "" && (
               <div className="cardBox">
-                {/* <img src={allrounder} /> */}
+                {/* <img alt={""} src={allrounder} /> */}
                 <div className="cardImageWrapper">
-                  <img src={value.data.Image} className="cardimage" />
+                  <img alt={""} src={value.data.Image} className="cardimage" />
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">
@@ -80,9 +77,9 @@ export default function ListPlayers() {
             value.data.Grade === "Grade - A" &&
             value.data.Teamname !== "" && (
               <div className="cardBox">
-                {/* <img src={allrounder} /> */}
+                {/* <img alt={""} src={allrounder} /> */}
                 <div className="cardImageWrapper">
-                  <img src={value.data.Image} className="cardimage" />
+                  <img alt={""} src={value.data.Image} className="cardimage" />
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">
@@ -103,9 +100,9 @@ export default function ListPlayers() {
             value.data.Grade === "Grade - B" &&
             value.data.Teamname !== "" && (
               <div className="cardBox">
-                {/* <img src={allrounder} /> */}
+                {/* <img alt={""} src={allrounder} /> */}
                 <div className="cardImageWrapper">
-                  <img src={value.data.Image} className="cardimage" />
+                  <img alt={""} src={value.data.Image} className="cardimage" />
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">

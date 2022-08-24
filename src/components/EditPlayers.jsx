@@ -148,7 +148,7 @@ export default function EditPlayers() {
         </div>
       </div>
       <div className="addplayerimagewrapper">
-        <img src={base64} className="addplayerimage" />
+        <img alt={""} src={base64} className="addplayerimage" />
       </div>
     </div>
   );
