@@ -143,7 +143,7 @@ export default function ShowPlayers() {
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">
-                  Strenght {value.data.Position}
+                  Strength: {value.data.Position}
                   <br></br>
                   Base Price: 5
                 </div>
