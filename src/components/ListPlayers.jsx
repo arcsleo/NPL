@@ -121,10 +121,11 @@ export default function ListPlayers() {
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">
-                  Sold to {value.data.Teamname}
+                  {/* Sold to {value.data.Teamname} */}
                 </div>
                 <div className="carduserNameAmount">
-                  Amount: {value.data.Amount}
+                  {/* Amount: {value.data.Amount} */}
+                  Strength: {value.data.Position}
                 </div>
               </div>
             )
@@ -144,10 +145,11 @@ export default function ListPlayers() {
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">
-                  Sold to {value.data.Teamname}
+                  {/* Sold to {value.data.Teamname} */}
                 </div>
                 <div className="carduserNameAmount">
-                  Amount: {value.data.Amount}
+                  {/* Amount: {value.data.Amount} */}
+                  Strength: {value.data.Position}
                 </div>
               </div>
             )
@@ -167,10 +169,11 @@ export default function ListPlayers() {
                 </div>
                 <div className="carduserName">{value.data.Name}</div>
                 <div className="cardusersold">
-                  Sold to {value.data.Teamname}
+                  {/* Sold to {value.data.Teamname} */}
                 </div>
                 <div className="carduserNameAmount">
-                  Amount: {value.data.Amount}
+                  {/* Amount: {value.data.Amount} */}
+                  Strength: {value.data.Position}
                 </div>
               </div>
             )
