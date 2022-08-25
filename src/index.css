@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+  box-sizing: border-box;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -40,8 +43,9 @@ code {
 }
 
 .mainWrapper {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 1);
   min-height: 100vh;
+  padding-top: 75px;
 }
 .playertext {
   width: 30%;
@@ -101,17 +105,18 @@ code {
 }
 .cardusersold {
   font-size: 15px;
-  font-family: monospace;
+  font-family: fantasy;
 }
 .carduserNameAmount {
   font-size: 15px;
-  font-family: monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .playerdetailstitle {
   width: 100%;
   font-size: 25px;
   color: #fff;
   font-family: monospace;
+  font-style: italic;
 }
 .playersearchbox {
   padding: 15px;
@@ -125,4 +130,59 @@ code {
 }
 .amountvalue {
   color: red;
+}
+.HeaderWrapper {
+  height: 90px;
+  background: rgba(0, 0, 0, 1);
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.Headerimagewrapper {
+  width: 10%;
+}
+.Headertextwrapper {
+  width: 80%;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  font-style: italic;
+}
+.captaincover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0px !important;
+}
+.captaincardinner {
+  padding: 25px 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* .captainnames {
+  color: #fff;
+} */
+
+/* query */
+
+@media only screen and (max-width: 768px) {
+  .HeaderWrapper {
+    height: 50px !important;
+  }
+
+  .Headerimagewrapper {
+    width: 15% !important;
+  }
+
+  .Headertextwrapper {
+    width: 70% !important;
+  }
+
+  .Headertextwrapper {
+    font-size: 20px !important;
+  }
 }

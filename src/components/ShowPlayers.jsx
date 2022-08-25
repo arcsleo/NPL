@@ -66,7 +66,7 @@ export default function ShowPlayers() {
     //   getPlayers();
     // }, 50000);
     getPlayers();
-    setInterval(function () {
+    setInterval(() => {
       getPlayers();
     }, 10000);
   }, []);
@@ -83,7 +83,7 @@ export default function ShowPlayers() {
         />
         <button className="searchbutton">Search</button>
       </div>
-      <h4 className="playerdetailstitle">Captains</h4>
+      <h4 className="playerdetailstitle">CAPTAINS</h4>
       <div className="playercardmainbox">
         {ListPlayerDetails.map((value) => {
           return (
@@ -131,7 +131,7 @@ export default function ShowPlayers() {
           );
         })}
       </div>
-      <h4 className="playerdetailstitle">Players Details</h4>
+      <h4 className="playerdetailstitle">PLAYER DETAILS</h4>
       <div className="playercardmainbox">
         {ListPlayerDetails.map((value) => {
           return (
