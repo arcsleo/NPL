@@ -112,8 +112,8 @@ export default function ListPlayers() {
       <div className="playercardmainbox">
         {ListPlayerDetails.map((value) => {
           return (
-            value.data.Grade === "Grade - A+" &&
-            value.data.Teamname !== "" && (
+            value.data.Grade === "Grade - A+" && (
+              // value.data.Teamname !== "" &&
               <div className="cardBox">
                 {/* <img alt={""} src={allrounder} /> */}
                 <div className="cardImageWrapper">
@@ -135,8 +135,8 @@ export default function ListPlayers() {
       <div className="playercardmainbox">
         {ListPlayerDetails.map((value) => {
           return (
-            value.data.Grade === "Grade - A" &&
-            value.data.Teamname !== "" && (
+            value.data.Grade === "Grade - A" && (
+              // value.data.Teamname !== "" &&
               <div className="cardBox">
                 {/* <img alt={""} src={allrounder} /> */}
                 <div className="cardImageWrapper">
@@ -158,8 +158,8 @@ export default function ListPlayers() {
       <div className="playercardmainbox">
         {ListPlayerDetails.map((value) => {
           return (
-            value.data.Grade === "Grade - B" &&
-            value.data.Teamname !== "" && (
+            value.data.Grade === "Grade - B" && (
+              // value.data.Teamname !== "" &&
               <div className="cardBox">
                 {/* <img alt={""} src={allrounder} /> */}
                 <div className="cardImageWrapper">
