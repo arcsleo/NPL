@@ -67,7 +67,7 @@ export default function ShowPlayers() {
     // }, 50000);
     getPlayers();
     setInterval(() => {
-      getPlayers();
+      // getPlayers();
     }, 10000);
   }, []);
 

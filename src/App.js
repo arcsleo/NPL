@@ -19,6 +19,8 @@ export default function App() {
       setSelectedTab("Edit Players");
     } else if (window.location.href.split("page=")[1] === "Show") {
       setSelectedTab("Show Players");
+    } else if (window.location.href.split("page=")[1] === "Add") {
+      setSelectedTab("Create Players");
     }
   }, []);
 

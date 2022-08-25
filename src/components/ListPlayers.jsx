@@ -68,7 +68,7 @@ export default function ListPlayers() {
     getCaptains();
     getPlayers();
     setInterval(() => {
-      getPlayers();
+      // getPlayers();
     }, 10000);
   }, []);
 
