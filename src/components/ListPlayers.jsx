@@ -108,6 +108,9 @@ export default function ListPlayers() {
         })}
       </div>
       <h4 className="playerdetailstitle">Sold Players</h4>
+      <div>
+        <button onClick={() => getPlayers()}>Refresh</button>
+      </div>
       {/* <h4 className="playerdetailstitle">PLAYERS</h4> */}
       <div className="playercardmainbox">
         {ListPlayerDetails.map((value) => {
