@@ -135,7 +135,7 @@ export default function ListPlayers() {
                     Sold to {value.data.Teamname}
                   </div>
                   <div className="carduserNameAmount">
-                    Amount: {value.data.Amount}
+                    Amount: {value.data.Amount} Cr.
                     {/* Strength: {value.data.Position} */}
                   </div>
                 </div>
@@ -170,7 +170,7 @@ export default function ListPlayers() {
                     Sold to {value.data.Teamname}
                   </div>
                   <div className="carduserNameAmount">
-                    Amount: {value.data.Amount}
+                    Amount: {value.data.Amount} Cr.
                     {/* Strength: {value.data.Position} */}
                   </div>
                 </div>
@@ -205,7 +205,7 @@ export default function ListPlayers() {
                     Sold to {value.data.Teamname}
                   </div>
                   <div className="carduserNameAmount">
-                    Amount: {value.data.Amount}
+                    Amount: {value.data.Amount} Cr.
                     {/* Strength: {value.data.Position} */}
                   </div>
                 </div>
