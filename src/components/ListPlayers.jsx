@@ -107,25 +107,36 @@ export default function ListPlayers() {
           );
         })}
       </div>
-      {/* <h4 className="playerdetailstitle">Sold Players</h4> */}
-      <h4 className="playerdetailstitle">PLAYERS</h4>
+      <h4 className="playerdetailstitle">Sold Players</h4>
+      {/* <h4 className="playerdetailstitle">PLAYERS</h4> */}
       <div className="playercardmainbox">
         {ListPlayerDetails.map((value) => {
           return (
-            value.data.Grade === "Grade - A+" && (
-              // value.data.Teamname !== "" &&
-              <div className="cardBox">
-                {/* <img alt={""} src={allrounder} /> */}
-                <div className="cardImageWrapper">
-                  <img alt={""} src={value.data.Image} className="cardimage" />
-                </div>
-                <div className="carduserName">{value.data.Name}</div>
-                <div className="cardusersold">
-                  {/* Sold to {value.data.Teamname} */}
-                </div>
-                <div className="carduserNameAmount">
-                  {/* Amount: {value.data.Amount} */}
-                  Strength: {value.data.Position}
+            value.data.Grade === "Grade - A+" &&
+            value.data.Teamname !== "" && (
+              <div
+                className="cardBox captaincover"
+                style={{
+                  backgroundImage: `url(${value.data.Teamlogo})`,
+                }}
+              >
+                <div className="captaincardinner">
+                  {/* <img alt={""} src={allrounder} /> */}
+                  <div className="cardImageWrapper">
+                    <img
+                      alt={""}
+                      src={value.data.Image}
+                      className="cardimage"
+                    />
+                  </div>
+                  <div className="carduserName">{value.data.Name}</div>
+                  <div className="cardusersold">
+                    Sold to {value.data.Teamname}
+                  </div>
+                  <div className="carduserNameAmount">
+                    Amount: {value.data.Amount}
+                    {/* Strength: {value.data.Position} */}
+                  </div>
                 </div>
               </div>
             )
@@ -136,20 +147,31 @@ export default function ListPlayers() {
       <div className="playercardmainbox">
         {ListPlayerDetails.map((value) => {
           return (
-            value.data.Grade === "Grade - A" && (
-              // value.data.Teamname !== "" &&
-              <div className="cardBox">
-                {/* <img alt={""} src={allrounder} /> */}
-                <div className="cardImageWrapper">
-                  <img alt={""} src={value.data.Image} className="cardimage" />
-                </div>
-                <div className="carduserName">{value.data.Name}</div>
-                <div className="cardusersold">
-                  {/* Sold to {value.data.Teamname} */}
-                </div>
-                <div className="carduserNameAmount">
-                  {/* Amount: {value.data.Amount} */}
-                  Strength: {value.data.Position}
+            value.data.Grade === "Grade - A" &&
+            value.data.Teamname !== "" && (
+              <div
+                className="cardBox captaincover"
+                style={{
+                  backgroundImage: `url(${value.data.Teamlogo})`,
+                }}
+              >
+                <div className="captaincardinner">
+                  {/* <img alt={""} src={allrounder} /> */}
+                  <div className="cardImageWrapper">
+                    <img
+                      alt={""}
+                      src={value.data.Image}
+                      className="cardimage"
+                    />
+                  </div>
+                  <div className="carduserName">{value.data.Name}</div>
+                  <div className="cardusersold">
+                    Sold to {value.data.Teamname}
+                  </div>
+                  <div className="carduserNameAmount">
+                    Amount: {value.data.Amount}
+                    {/* Strength: {value.data.Position} */}
+                  </div>
                 </div>
               </div>
             )
@@ -160,20 +182,31 @@ export default function ListPlayers() {
       <div className="playercardmainbox">
         {ListPlayerDetails.map((value) => {
           return (
-            value.data.Grade === "Grade - B" && (
-              // value.data.Teamname !== "" &&
-              <div className="cardBox">
-                {/* <img alt={""} src={allrounder} /> */}
-                <div className="cardImageWrapper">
-                  <img alt={""} src={value.data.Image} className="cardimage" />
-                </div>
-                <div className="carduserName">{value.data.Name}</div>
-                <div className="cardusersold">
-                  {/* Sold to {value.data.Teamname} */}
-                </div>
-                <div className="carduserNameAmount">
-                  {/* Amount: {value.data.Amount} */}
-                  Strength: {value.data.Position}
+            value.data.Grade === "Grade - B" &&
+            value.data.Teamname !== "" && (
+              <div
+                className="cardBox captaincover"
+                style={{
+                  backgroundImage: `url(${value.data.Teamlogo})`,
+                }}
+              >
+                <div className="cardBox">
+                  {/* <img alt={""} src={allrounder} /> */}
+                  <div className="cardImageWrapper">
+                    <img
+                      alt={""}
+                      src={value.data.Image}
+                      className="cardimage"
+                    />
+                  </div>
+                  <div className="carduserName">{value.data.Name}</div>
+                  <div className="cardusersold">
+                    Sold to {value.data.Teamname}
+                  </div>
+                  <div className="carduserNameAmount">
+                    Amount: {value.data.Amount}
+                    {/* Strength: {value.data.Position} */}
+                  </div>
                 </div>
               </div>
             )
