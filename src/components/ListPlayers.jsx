@@ -190,7 +190,7 @@ export default function ListPlayers() {
                   backgroundImage: `url(${value.data.Teamlogo})`,
                 }}
               >
-                <div className="cardBox">
+                <div className="captaincardinner">
                   {/* <img alt={""} src={allrounder} /> */}
                   <div className="cardImageWrapper">
                     <img

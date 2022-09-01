@@ -79,7 +79,7 @@ code {
 .cardBox {
   width: 250px;
   padding: 25px 10px;
-  height: 250px;
+  height: auto;
   background-color: #fff;
   margin: 10px;
   box-shadow: 5px 4px 2px #888888;

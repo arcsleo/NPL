@@ -79,7 +79,10 @@ export default function ShowPlayers() {
           type="text"
           className="searchplayertext"
           placeholder="Enter Player name"
-          onChange={(e) => setsearch(e.currentTarget.value)}
+          onChange={(e) => {
+            setsearch(e.currentTarget.value);
+            getPlayers();
+          }}
         />
         <button className="searchbutton">Search</button>
       </div>
